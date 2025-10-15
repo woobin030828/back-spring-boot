@@ -12,10 +12,18 @@ public class DiTests {
     @Autowired
     private Coding coding;
 
+    @Autowired
+    private Food food;
+
     @Test
     public void diTest01(){
         Computer computer = new Computer();
         log.info(computer.toString());
         log.info(coding.getComputer().toString());
+    }
+
+    @Test
+    public void diTest2(){
+        log.info(food.getKnife().toString());
     }
 }

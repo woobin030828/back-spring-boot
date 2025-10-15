@@ -1,15 +1,12 @@
 package com.app.dependency.di;
 
-
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
 @Data
 @RequiredArgsConstructor
-public class Coding {
-    final private Computer computer;
-
+public class Food {
+    private final Knife knife;
 }
